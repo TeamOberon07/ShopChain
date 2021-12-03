@@ -1,0 +1,31 @@
+% Per sfruttare il template bastera' tenere una cartella in locale
+% con i file frontespizio.tex, import.tex e i tre loghi;
+
+% Creare un file per ciascuna sezione ed importarlo con \input{sezioneX.txt}
+% Aggiornare il file import.tex su GitHub se modificato
+
+\documentclass[a4paper]{article}
+
+% Impostare titolo
+\newcommand{\doctitle}{TEMPLATE DOCUMENTI}
+
+% Import dei packages e impaginazione
+\input{import.tex}
+
+\makeindex
+
+\begin{document}
+    
+    % Frontespizio
+	\input{frontespizio.tex}
+	\pagebreak	
+
+    % Indice
+	\tableofcontents	
+	\pagebreak
+		
+	% Prima sezione
+	\input{sezione1.tex}
+    \pagebreak
+	
+\end{document}
